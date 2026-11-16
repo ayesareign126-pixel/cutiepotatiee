@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Cutiee Potatie</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #e6ccff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(180, 80, 140, 0.2);
+        }
+
+        h1 {
+            color: #e75491;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #9870a9;
+            margin-bottom: 25px;
+        }
+
+        .heart {
+            font-size: 55px;
+            color: #ff5c9a;
+            animation: heartbeat 1.2s infinite;
+        }
+
+        @keyframes heartbeat {
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .message {
+            background: #fff0f6;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            color: #8d4269;
+            line-height: 1.8;
+        }
+
+        .meter {
+            background: #f5d5e5;
+            height: 18px;
+            border-radius: 20px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #ff80ab, #bd75e8);
+            border-radius: 20px;
+        }
+
+        button {
+            background: #ed72a6;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #c94c87;
+        }
+
+        #extraMessage {
+            color: #c34d89;
+            margin-top: 20px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #b17b9c;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="heart">♥</div>
+
+        <h1>Hey, Cutiee Potatie!</h1>
+        <p class="subtitle">A special page made just for you ♡</p>
+
+        <div class="message">
+            <h3>To my Jo, Jay and Paul!</h3>
+            <p>
+                I just want you to know how much
+                I appreciate you.
+            </p>
+
+            <p>
+                Always remember, you're so pogi!
+                You're smart, talented, and amazing.
+            </p>
+
+            <p>
+                Never doubt yourself.
+                You are more than enough!
+            </p>
+        </div>
+
+        
+        <br>
+
+
+        <button onclick="showLove()">
+            Click for a Surprise ♡
+        </button>
+
+        <p id="extraMessage"></p>
+
+        <footer>
+            Made with love, just for you. ♡
+        </footer>
+
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("extraMessage").innerHTML =
+                "You're so pogi, so special, and so loved! " +
+                "I'm always proud of you. Never forget that! ♥";
+        }
+    </script>
+
+</body>
+</html>
